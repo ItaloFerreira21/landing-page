@@ -1,0 +1,33 @@
+@import "../../../cores.scss";
+
+.main-saction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  font-family: "Roboto", sans-serif;
+  padding: 0 70px;
+
+
+  span{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    color: $texto-secundario;
+  }
+
+  h1{
+    font-size: 70px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: $texto-primario;
+  }
+}
+
+@media (min-widht: 1080px) {
+  .main-saction {
+    flex-direction: row;
+  }
+}
