@@ -1,0 +1,4 @@
+interface NewslatterResponse{
+  message: string;
+}
+

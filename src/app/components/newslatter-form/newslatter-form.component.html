@@ -1,0 +1,23 @@
+<section class="form-section">
+  <div class="text">
+    <h3>Fique por dentro de novas tecnologias de segurança</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+      cupiditate debitis quas, autem delectus molestiae. Ipsum, consequatur.
+      Voluptates excepturi quas harum rem tenetur quaerat, alias rerum.
+      Necessitatibus unde explicabo asperiores?
+    </p>
+  </div>
+  <form [formGroup]="newslatterForm">
+    <label for="name">Nome</label>
+    <input id="name" formControlName="name" />
+    <label for="email">Email</label>
+    <input id="email" formControlName="email" />
+    <btn
+      btn-text="Se inscreva"
+      (submit)="onSubmit()"
+      [disabled]="!newslatterForm.valid"
+      [loading]="loading()"
+    ></btn>
+  </form>
+</section>
